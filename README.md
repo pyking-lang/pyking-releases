@@ -25,4 +25,3 @@ curl -fLO https://github.com/pyking-lang/pyking-releases/releases/latest/downloa
 sudo apt install ./pyking_amd64.deb
 ```
 
-`pyk notebook` and `pyk playground` also need Python 3.10 or later.
