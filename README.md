@@ -25,3 +25,23 @@ curl -fLO https://github.com/pyking-lang/pyking-releases/releases/latest/downloa
 sudo apt install ./pyking_amd64.deb
 ```
 
+## Nix
+
+Linux and macOS, with flakes enabled. Run it once, or install it:
+
+```sh
+nix run github:pyking-lang/pyking-releases -- hello.pyk
+nix profile install github:pyking-lang/pyking-releases
+```
+
+## Docker
+
+x86_64 and arm64. The current directory is the container's `/work`:
+
+```sh
+docker run --rm -it -v "$PWD:/work" ghcr.io/pyking-lang/pyking hello.pyk
+docker run --rm -it -v "$PWD:/work" ghcr.io/pyking-lang/pyking repl
+docker run --rm -p 8000:8000 ghcr.io/pyking-lang/pyking playground --port 8000
+```
+
+`ghcr.io/pyking-lang/pyking:full` also holds Python, node, gcc, a JDK and OCaml, so `pyk compile --run` runs every target.
