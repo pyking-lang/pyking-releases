@@ -7,6 +7,7 @@ Releases of Pyking, a compiler and interpreter with no dependencies.
 macOS 11 or later, Apple Silicon and Intel, with [Homebrew](https://brew.sh):
 
 ```sh
+brew update
 brew install pyking-lang/tap/pyking
 ```
 

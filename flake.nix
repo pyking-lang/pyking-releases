@@ -7,12 +7,12 @@
 
   outputs = { self, nixpkgs }:
     let
-      version = "0.1.3";
+      version = "0.1.4";
       sources = pkgs: {
-        "aarch64-darwin" = pkgs.fetchurl { url = "https://github.com/pyking-lang/pyking-releases/releases/download/v0.1.3/pyking-0.1.3-macos.tar.gz"; hash = "sha256-eqnB22dmUivE3n6e0bF1knyYNNoHbZHWD0A01pT9C2c="; };
-        "aarch64-linux" = pkgs.fetchurl { url = "https://github.com/pyking-lang/pyking-releases/releases/download/v0.1.3/pyking-0.1.3-linux-aarch64.tar.gz"; hash = "sha256-mNElpEkiWSOyRQmS1fr8qeZwIWRoSuaU0jnF0nuNOSE="; };
-        "x86_64-darwin" = pkgs.fetchurl { url = "https://github.com/pyking-lang/pyking-releases/releases/download/v0.1.3/pyking-0.1.3-macos.tar.gz"; hash = "sha256-eqnB22dmUivE3n6e0bF1knyYNNoHbZHWD0A01pT9C2c="; };
-        "x86_64-linux" = pkgs.fetchurl { url = "https://github.com/pyking-lang/pyking-releases/releases/download/v0.1.3/pyking-0.1.3-linux-x86_64.tar.gz"; hash = "sha256-fMkakH9S2UTG+S236rh/x4HDpl5PkHL95UzaterTA+o="; };
+        "aarch64-darwin" = pkgs.fetchurl { url = "https://github.com/pyking-lang/pyking-releases/releases/download/v0.1.4/pyking-0.1.4-macos.tar.gz"; hash = "sha256-zD4CHqr6ErAUx26OZvvYiRjuv8Uzznfb5zirclwD3wo="; };
+        "aarch64-linux" = pkgs.fetchurl { url = "https://github.com/pyking-lang/pyking-releases/releases/download/v0.1.4/pyking-0.1.4-linux-aarch64.tar.gz"; hash = "sha256-s/4ZIjWfdlFVkb5yPI+QstzDDl3okV8Fbtx2wgUBgYY="; };
+        "x86_64-darwin" = pkgs.fetchurl { url = "https://github.com/pyking-lang/pyking-releases/releases/download/v0.1.4/pyking-0.1.4-macos.tar.gz"; hash = "sha256-zD4CHqr6ErAUx26OZvvYiRjuv8Uzznfb5zirclwD3wo="; };
+        "x86_64-linux" = pkgs.fetchurl { url = "https://github.com/pyking-lang/pyking-releases/releases/download/v0.1.4/pyking-0.1.4-linux-x86_64.tar.gz"; hash = "sha256-KI3vFZONYGS3OJodsRvalW0fI7kkdKLqv4ag6nxdeYI="; };
       };
       systems = builtins.attrNames (sources null);
       package = system:
