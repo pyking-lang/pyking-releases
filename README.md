@@ -33,8 +33,8 @@ sudo apt install ./pyking_amd64.deb
 Linux and macOS, with flakes enabled, built from the source in [pyking-lang/pyking](https://github.com/pyking-lang/pyking) (`tools/packaging/nix/`). Run it once, or install it:
 
 ```sh
-nix run 'github:pyking-lang/pyking/release-0.1.5?dir=tools/packaging/nix' -- hello.pyk
-nix profile install 'github:pyking-lang/pyking/release-0.1.5?dir=tools/packaging/nix'
+nix run 'github:pyking-lang/pyking/release-0.1.6?dir=tools/packaging/nix' -- hello.pyk
+nix profile install 'github:pyking-lang/pyking/release-0.1.6?dir=tools/packaging/nix'
 ```
 
 ## Docker
